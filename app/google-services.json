@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "747315967307",
+    "project_id": "glglgglcs",
+    "storage_bucket": "glglgglcs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747315967307:android:90bed71e823c4b79ee64ce",
+        "android_client_info": {
+          "package_name": "wheel.fun.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747315967307-44a827pt8q0vq82ll8o63ivfaaa04j9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx2DuzzXZq1p4sKVk906Q6NDsFnYadzRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747315967307-44a827pt8q0vq82ll8o63ivfaaa04j9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

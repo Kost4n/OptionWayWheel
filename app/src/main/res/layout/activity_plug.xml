@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PlugActivity">
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Score"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_button_spin"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha" />
+
+    <ImageView
+        android:id="@+id/rul"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/rouletteive"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_a_bet"
+        app:layout_constraintTop_toBottomOf="@id/rul"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button_red"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"
+        android:text="Red"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rul"
+        android:backgroundTint="@color/red_light"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_black"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/black"
+        android:text="Black"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/button_red"
+        app:layout_constraintTop_toBottomOf="@id/rul"/>
+
+    <EditText
+        android:id="@+id/select_number"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="@string/select_number"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/button_black"
+        app:layout_constraintTop_toBottomOf="@id/rul"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"/>
+
+    <TextView
+        android:id="@+id/text_bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button_red"
+        android:textSize="24dp"
+        android:text="10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"/>
+
+    <android.widget.Button
+        android:id="@+id/button_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/text_bet"
+        app:layout_constraintTop_toBottomOf="@id/button_red"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_bet"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <android.widget.Button
+        android:id="@+id/button_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/text_bet"
+        app:layout_constraintTop_toBottomOf="@id/button_red"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_bet"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <android.widget.Button
+        android:id="@+id/button_spin"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickStart"
+        android:text="@string/spin"
+        app:layout_constraintTop_toBottomOf="@id/select_number"
+        app:layout_constraintStart_toStartOf="@id/select_number"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/bg_button_spin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
