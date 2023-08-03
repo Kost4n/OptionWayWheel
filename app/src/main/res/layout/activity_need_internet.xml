@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_light">
     <TextView
         android:id="@+id/text_need_internet"
         app:layout_constraintTop_toTopOf="parent"
@@ -13,7 +14,8 @@
         android:text="@string/text_need_internet"
         android:textSize="26dp"
         android:layout_marginTop="200dp"
-        android:layout_marginLeft="25dp"/>
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/white"/>
     <Button
         android:id="@+id/button_restart_internet"
         android:layout_width="wrap_content"

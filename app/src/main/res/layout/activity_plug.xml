@@ -4,12 +4,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".PlugActivity">
+    tools:context=".PlugActivity"
+    android:background="@color/purple_light">
     <TextView
         android:id="@+id/text_score"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Score"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +48,8 @@
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/button_red"
@@ -59,7 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rul"
         android:backgroundTint="@color/red_light"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/button_black"
@@ -83,7 +86,9 @@
         app:layout_constraintStart_toEndOf="@id/button_black"
         app:layout_constraintTop_toBottomOf="@id/rul"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="52dp"/>
+        android:layout_marginTop="52dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
 
     <TextView
         android:id="@+id/text_bet"
@@ -107,7 +112,8 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/bg_bet"
         android:layout_marginEnd="10dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"/>
 
     <android.widget.Button
         android:id="@+id/button_plus"
@@ -120,7 +126,8 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/bg_bet"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"/>
 
     <android.widget.Button
         android:id="@+id/button_spin"
@@ -133,6 +140,7 @@
         android:textAllCaps="false"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="80dp"
-        android:background="@drawable/bg_button_spin"/>
+        android:background="@drawable/bg_button_spin"
+        android:textColor="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

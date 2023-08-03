@@ -150,7 +150,7 @@ class LoadingActivity: AppCompatActivity() {
                 val ope: String = remoteConfig.getString("url")
                 val to: Boolean = remoteConfig.getBoolean("to")
                 if (to) {
-                    if (ope.isEmpty() || checkIsEmu() || vpnActive(applicationContext)) {
+                    if (ope.isEmpty() || checkIsEmu() || vpnActive(binding.root.context)) {
                         startActivity(Intent(this, PlugActivity::class.java))
                     } else {
                         saveLink(ope)
