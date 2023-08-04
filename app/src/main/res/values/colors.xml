@@ -6,4 +6,6 @@
     <color name="red_light">#E13434</color>
     <color name="purple_light">#c540c8</color>
     <color name="purple">#520385</color>
+    <color name="green_light">#18976a</color>
+    <color name="green">#024f3f</color>
 </resources>

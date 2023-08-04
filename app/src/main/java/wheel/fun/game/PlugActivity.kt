@@ -151,24 +151,34 @@ class PlugActivity: AppCompatActivity() {
         val betNumber = binding.selectNumber.text.toString()
         var winBet = 1
         if (number.contains("RED") && isRed) {
-            winBet = if (number.equals(betNumber)) {
-                (bet * 2)
+            if (betNumber != "") {
+                if (number.contains(betNumber)) {
+                    winBet = (bet * 2.5).toInt()
+                    showResult("Win!", "Your winnings: ", winBet)
+                } else {
+                    showResult("Loss")
+                }
             } else {
-                (bet * 1.5).toInt()
+                winBet = (bet * 1.5).toInt()
+                showResult("Win!", "Your winnings: ", winBet)
             }
             score += winBet
-            showResult("Win!", "Your winnings: ", winBet)
         }
         else if (number.contains("BLACK") && isBlack) {
-            winBet = if (number.equals(betNumber)) {
-                (bet * 2)
+            if (betNumber != "") {
+                if (number.contains(betNumber)) {
+                    winBet = (bet * 2.5).toInt()
+                    showResult("Win!", "Your winnings: ", winBet)
+                } else {
+                    showResult("Loss")
+                }
             } else {
-                (bet * 1.5).toInt()
+                winBet = (bet * 1.5).toInt()
+                showResult("Win!", "Your winnings: ", winBet)
             }
             score += winBet
-            showResult("Win!", "Your winnings: ", winBet)
         } else if (number == "0") {
-            winBet = bet * 3
+            winBet = bet * 4
             score += winBet
             showResult("Extrawin!", "Your winnings: ", winBet)
         } else {
